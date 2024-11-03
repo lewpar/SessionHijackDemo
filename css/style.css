@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.25rem;
+}
