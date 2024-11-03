@@ -12,6 +12,8 @@ if (!isset($_SESSION['user'])) {
 $title = "Profile";
 include 'templates/header.php'; 
 ?>
-    <h1>Welcome, <?php echo $_SESSION['user']; ?>!</h1>
+    <h2>Profile</h2>
+
+    <h3>Welcome, <?php echo $_SESSION['user']; ?>!</h3>
     <p>Your session ID: <?php echo session_id(); ?></p>
 <?php include 'templates/footer.php'; ?>

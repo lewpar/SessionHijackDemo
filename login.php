@@ -29,6 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $title = "Login";
 include 'templates/header.php'; 
 ?>
+    <h2>Login</h2>
+
     <form method="POST" action="login.php">
         <div class="form-group">
             <label>Username (hijackdemo)</label>
