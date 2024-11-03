@@ -1,6 +1,7 @@
 <?php 
+session_start();
 $title = "Home";
 include 'templates/header.php'; 
 ?>
-    Welcome, <a href="/login.php">login.</a>
+    Welcome, this is a lab site for session hijacking over the HTTP protocol.
 <?php include 'templates/footer.php'; ?>
