@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 $title = "Login";
 include 'templates/header.php'; 
 ?>
+<div class="page-content" style="justify-content: center">
     <h2>Login</h2>
 
     <form method="POST" action="login.php">
@@ -43,7 +44,7 @@ include 'templates/header.php';
         </div>
 
         <div class="form-group">
-            <p class="warning">Do NOT submit sensitive data into these fields, as it will be transmitted over an unencrypted medium.</p>
+            <p class="warning">Do <b>NOT</b> enter any sensitive information into these fields, as they will be transmitted over an unencrypted medium.</p>
         </div>
 
         <button type="submit">Login</button>
@@ -52,4 +53,6 @@ include 'templates/header.php';
             <p class="error">Invalid Credentials</p>
         <?php endif ?>
     </form>
+</div>
+    
 <?php include 'templates/footer.php'; ?>
