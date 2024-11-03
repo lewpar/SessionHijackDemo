@@ -80,3 +80,67 @@ form {
 
     gap: 0.25rem;
 }
+
+.warning {
+    font-style: bold;
+
+    color: white;
+    background-color: orange;
+
+    border: 1px solid rgb(218, 141, 0);
+    border-radius: 5px;
+
+    padding: 0.5rem;
+}
+.error {
+    font-style: bold;
+
+    color: white;
+    background-color: red;
+
+    border: 1px solid rgb(214, 0, 0);
+    border-radius: 5px;
+
+    padding: 0.5rem;
+
+    opacity: 0;
+
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+input {
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 4px;
+
+    padding: 0.5rem;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+
+    color: white;
+    background-color: dodgerblue;
+
+    padding: 0.5rem;
+
+    transition: filter 0.25s;
+}
+button:hover {
+    filter: brightness(120%);
+}
+button:active {
+    filter: unset;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
