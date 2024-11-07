@@ -12,10 +12,11 @@ if (isset($_SESSION['user'])) {
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $hasError = false;
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = strtolower($_POST['username']);
+    $password = strtolower($_POST['password']);
 
-    if ($username == 'hijackdemo' && $password == 'password1') {
+    if (($username == 'hacker' && $password == 'hunter1') ||
+        ($username == 'danny' && $password == 'password1')) {
         $_SESSION['user'] = $username;
         header('Location: profile.php');
     }
