@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (($username == 'hacker' && $password == 'hunter1') ||
         ($username == 'danny' && $password == 'password1')) {
         $_SESSION['user'] = $username;
+        session_regenerate_id();
         header('Location: profile.php');
     }
     else {
