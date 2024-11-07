@@ -35,13 +35,32 @@ include 'templates/header.php';
 
     <form method="POST" action="login.php">
         <div class="form-group">
-            <label>Username (hijackdemo)</label>
+            <label>Username</label>
             <input type="text" name="username">
         </div>
 
         <div class="form-group">
-            <label>Password (password1)</label>
+            <label>Password</label>
             <input type="password" name="password">
+        </div>
+
+        <div class="form-group">
+            <table class="accounts">
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+
+                <tr>
+                    <td>hacker</td>
+                    <td>hunter1</td>
+                </tr>
+
+                <tr>
+                    <td>danny</td>
+                    <td>password1</td>
+                </tr>
+            </table>
         </div>
 
         <div class="form-group">

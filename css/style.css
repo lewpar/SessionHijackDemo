@@ -11,6 +11,7 @@ body {
 
     color: white;
 
+    background-color: rgb(20, 20, 20);
     background-image: url('/images/wireshark-capture.png');
     background-position: center;
     background-size: cover;
@@ -121,6 +122,17 @@ form {
     gap: 0.25rem;
 }
 
+.accounts {
+    text-align: left; 
+
+    background-color: rgb(20, 20, 20);
+    
+    border: 1px solid rgb(40, 40, 40); 
+    border-radius: 5px; 
+    
+    padding: 0.5rem;
+}
+
 .warning {
     font-style: bold;
 
@@ -154,7 +166,7 @@ input {
     color: white;
     background-color: rgb(20, 20, 20);
 
-    border: 2px solid rgb(30, 30, 30);
+    border: 2px solid rgb(40, 40, 40);
     border-radius: 4px;
 
     padding: 0.5rem;
